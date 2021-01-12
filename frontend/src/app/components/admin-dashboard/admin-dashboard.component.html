@@ -1,0 +1,44 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <img class="img-admin mr-4" src="../../../assets/mortarboard.svg" alt="Admin-icon">
+    <a class="navbar-brand text-white" href="#">
+      Cursillos.com
+    </a>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+      <form class="form-inline my-2 my-lg-0 ml-auto">
+        <input class="form-control search-bar mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-warning my-2 my-sm-0" type="submit">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </form>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="/admin/courses">
+                Ver Cursos
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/admin/create-courses">
+                Crear Curso
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="/signup">
+                Cerrar Sesi&oacute;n
+            </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<div class="container w-100" id="courses">
+    <div class="row">
+      <app-course class="row">
+      </app-course>
+    </div>
+</div>
