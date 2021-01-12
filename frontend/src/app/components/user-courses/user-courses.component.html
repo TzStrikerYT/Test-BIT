@@ -1,0 +1,14 @@
+<!-- Cards of Courses -->
+<div class="card col-sm-4 ml-0" *ngFor="let course of userCourseService.courses">
+    <img class="card-img-top" src="../assets/python.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{ course.name }}</h5>
+      <p class="card-text">{{ course.description }}</p>
+      <p class="font-italic text-muted mb-0">Fecha de Inicio: {{ course.startDate }}</p>
+      <p class="font-italic text-muted">Fecha Final: {{ course.endDate }}</p>
+      <p class="font-italic text-muted mb-0">Sede: {{ course.place }}</p>
+      <p class="font-italic text-muted mb-0">Duracion: {{ course.duration }} Horas</p>
+      <p class="font-italic text-muted">Jornada: {{ course.dayTime }}</p>
+      <a href="/register" class="btn btn-sm btn-warning font-weight-bold">Inscribirme</a>
+    </div>
+</div>
